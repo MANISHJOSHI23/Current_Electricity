@@ -275,3 +275,34 @@ class Obj(Slide):
         Intro_title = Title('ELECTRIC CURRENT', color=BLUE)
         self.play(ReplacementTransform(title,Intro_title))
         self.wait()
+
+class Current(Slide):
+    def construct(self):
+        Intro_title = Title('ELECTRIC CURRENT (I)', font_size=40,color=BLUE,underline_buff=SMALL_BUFF,match_underline_width_to_text=True).to_corner(UL,buff=0.1)
+        self.add(Intro_title)
+        self.next_slide()
+        steps1 = ItemList(Item(r"Charges in motion constitute an electric current.",pw="13 cm",color=GREEN),
+                          Item(r"Current is defined as the rate of flow of electric charge through any cross-section of a conductor.",pw="13 cm",color=GREEN),
+                          Item(r"For steady current(or average current) : $I=\dfrac{\text{total charge flowing }(\Delta q)}{\text{time taken} \Delta t}=\dfrac{ne}{t}$",pw="13 cm",color=GREEN),
+                          Item(r"Currents are not always steady and hence more generally, we define the current as follows",pw="13 cm",color=GREEN),
+                          Item(r"The current at time t (instantaneous current) across the cross-section of the conductor is defined as the value of the ratio of $\Delta Q$ to $\Delta t$ in the limit of $\Delta t$ tending to zero,",pw="13 cm",color=ORANGE),
+                          Item(r"Instantaneous current : $\displaystyle I(t)=\lim_{\Delta x \to 0}\dfrac{ \Delta q}{\Delta t}=\dfrac{dQ}{dt}$",pw="13 cm",color=GREEN),
+                          buff=0.45).next_to(Intro_title,DOWN).to_edge(LEFT).set_z_index(2)
+        
+        for item in steps1:
+            self.play(Write(item))
+            self.next_slide()
+
+class Ex1(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 1 :", r" How many electrons pass through a lamp in 1 min, if the current is 300 mA? Given, the charge on an electron is $1.6\times 10^{-19}$ C",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+
+class Ex2(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 2 :", r" The current in a device varies with time $t$ as $I=6t$, where $I$ is mA an t is in s. The amount of charge that passes through the device during $t=0$ s to $t=3$ s is- [CBSE 2023]",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
