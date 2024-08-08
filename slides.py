@@ -306,3 +306,72 @@ class Ex2(Slide):
         ex_title = Tex(r"Example 2 :", r" The current in a device varies with time $t$ as $I=6t$, where $I$ is mA an t is in s. The amount of charge that passes through the device during $t=0$ s to $t=3$ s is- [CBSE 2023]",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
         ex_title[0].set_color(GREEN)
         self.play(Write(ex_title))
+
+class Ex3(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 3 :", r" (a) Estimate the average drift speed of conduction electrons in a copper wire of cross-sectional area $1.0 \times 10^{-7}\ m^2$ carrying a current of 1.5 A. Assume that each copper atom contributes roughly one conduction electron. The density of copper is $9.0 \times 10^3\ kg/m^33$, and its atomic mass is 63.5 u. (b) Compare the drift speed obtained above with, (i) thermal speeds of copper atoms at ordinary temperatures, (ii) speed of propagation of electric field along the conductor which causes the drift motion. [NCERT EXAMPLE]",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+
+class Ex4A(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 4 :", r" (a) In Example 3.1, the electron drift speed is estimated to be only a few mm s$^{-1}$ for currents in the range of a few amperes? How then is current established almost the instant a circuit is closed? [NCERT EXAMPLE]",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+        self.wait()
+        self.next_slide()
+        ex_sol = Tex(r"Solution :", r" Electric field is established throughout the circuit, almost instantly (with the speed of light) causing at every point a local electron drift. Establishment of a current does not have to wait for electrons from one end of the conductor travelling to the other end. However, it does take a little while for the current to reach its steady value.",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
+        ex_sol[0].set_color(ORANGE)
+        self.play(Write(ex_sol))
+
+
+class Ex4B(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 4 :", r"(b)  The electron drift arises due to the force experienced by electrons in the electric field inside the conductor. But force should cause acceleration. Why then do the electrons acquire a steady average drift speed?",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).to_corner(UL,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+        self.wait()
+        self.next_slide()
+        ex_sol = Tex(r"Solution :", r" Each 'free' electron does accelerate, increasing its drift speed until it collides with a positive ion of the metal. It loses its drift speed after collision but starts to accelerate and increases its drift speed again only to suffer a collision again and so on. On the average, therefore, electrons acquire only a drift speed.",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
+        ex_sol[0].set_color(ORANGE)
+        self.play(Write(ex_sol))
+    
+
+class Ex4C(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 4 :", r"((c) If the electron drift speed is so small, and the electron's charge is small, how can we still obtain large amounts of current in a conductor?",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UL,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+        self.wait()
+        self.next_slide()
+        ex_sol = Tex(r"Solution :", r" Simple, because the electron number density is enormous, $\approx 10^{29} m^{-3}$.",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
+        ex_sol[0].set_color(ORANGE)
+        self.play(Write(ex_sol))
+
+class Ex4D(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 4 :", r"((d)  When electrons drift in a metal from lower to higher potential, does it mean that all the 'free' electrons of the metal are moving in the same direction?",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UL,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+        self.wait()
+        self.next_slide()
+        ex_sol = Tex(r"Solution :", r" By no means. The drift velocity is superposed over the large random velocities of electrons.",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
+        ex_sol[0].set_color(ORANGE)
+        self.play(Write(ex_sol))
+
+class Ex4E(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 4 :", r"((e)  Are the paths of electrons straight lines between successive collisions (with the positive ions of the metal) in the (i) absence of electric field, (ii) presence of electric field?",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UL,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+        self.wait()
+        self.next_slide()
+        ex_sol = Tex(r"Solution :", r" In the absence of electric field, the paths are straight lines; in the presence of electric field, the paths are, in general, curved.",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
+        ex_sol[0].set_color(ORANGE)
+        self.play(Write(ex_sol))
