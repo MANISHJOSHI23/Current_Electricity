@@ -375,3 +375,31 @@ class Ex4E(Slide):
         ex_sol = Tex(r"Solution :", r" In the absence of electric field, the paths are straight lines; in the presence of electric field, the paths are, in general, curved.",tex_environment="{minipage}{13 cm}",font_size=35, color=PINK).next_to(ex_title,DOWN).to_corner(LEFT,buff=0.2)
         ex_sol[0].set_color(ORANGE)
         self.play(Write(ex_sol))
+
+class Ex5(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 5 :", r" A heating element using nichrome connected to a 230 V supply draws an initial current of 3.2 A which settles after a few seconds to a steady value of 2.8 A. What is the steady temperature of the heating element if the room temperature is 27.0 $^\circ C$? Temperature coefficient of resistance of nichrome averaged over the temperature range involved is $1.70 \times 10^{-4}\ ^\circ C^{-1}$. [NCERT]",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+
+class Ex6(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 6 :", r" A resistance coil is made by joining in parallel two resistances each of 10 $\Omega$. An emf of 1 V is applied between the two ends of coil for 5 min. Calculate the heat produced in calories.",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+
+class Ex7(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 7 :", r" Two bulbs are marked 220V-100W and 220V-50W, respectively. They are connected in series to 220 V mains. Determine the ratio of heat generated in them.",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
+
+class Ex8(Slide):
+    def construct(self):
+
+        ex_title = Tex(r"Example 8 :", r" Two electric bulbs P and Q have their resistances in the ratio of $1:2$. They are connected in series across a battery. Find the ratio of the power dissipation in these bulbs. [CBSE 2018] ",tex_environment="{minipage}{13 cm}",font_size=35, color=BLUE_C).to_corner(UP,buff=0.2).to_corner(LEFT,buff=0.2)
+        ex_title[0].set_color(GREEN)
+        self.play(Write(ex_title))
